@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style2.css') }}">
+</head>
+<body>
+    <img src="../static/imgs/entete1.png" alt="" srcset="" style="position: absolute; top: 0%; left: 10%;">
+    <p style="position: absolute; top: 35%; left: 40%;">Casablanca , le {{ date }} </p>
+    <p style="position: absolute; top: 39%; left: 30%;">FACTURE : {{ dtf }}</p>
+    <div id="carre">
+        <p id="nom" style="padding-left: 25px;">{{ nom }}</p>
+        <p id="adress" style="padding-left: 25px;">{{ adress }}</p>
+        <p id="ice" style="padding-left: 15px; padding-bottom: 2px;">ICE :{{ ice }}</p>
+    </div>
+    <div id="tabl">
+        <table>
+            <tr>
+                <th style="padding-top: -79px;">DÉSIGNATION</th>
+                <th>QTE</th>
+                <th>PU HT </th>
+                <th>TOTAL HT </th>
+            </tr>
+            <tr>
+                <td class="td"><p id="desi" style="height: 250px; padding-left: 15px;"> {{desi}}</p></td>
+                <td class="td"><p id="qte" style="height: 250px;  padding-left: 15px;"> {{ qte }} M</p></td>
+                <td class="td"><p id="puht" style="height: 250px;  padding-left: 15px;">  {{ puht }} DH</p></td>
+                <td class="td"><p id="total" style="height: 250px;  padding-left: 15px;">{{ total }} DH</p></td>
+            </tr>
+            
+            <tr>
+                <th style="font-size: 14px; color: black; ">  TOTAL HT</th> 
+               <td id="total" class="td2"> {{ total  }} dhs</td>
+              </tr>
+              <tr>
+                <th style="font-size: 14px; color: black;">TVA 20%</th>
+                <td id="tva" class="td2">{{ tva }} dhs</td>
+              </tr>
+              <tr>
+                <th style="font-size: 14px; color: black;">TOTAL TTC</th>
+                <td id="ttc" class="td2">{{ ttc }} dhs</td>
+              </tr>
+           
+         </table>
+         <p id="nbch" style="position: absolute; top: 99%;   left : 2%; ">Arrêtée la présente facture à la somme de {{ nbch }} </p>
+         <img src="../static/imgs/bottom.png" alt="" srcset="" style="position: absolute; top: 110%;   left : 17%; ">
+       </div>
+   
+       
+       
+</body>
+</html>

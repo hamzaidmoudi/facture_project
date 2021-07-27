@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIEF'ME SARL PAGE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+
+</head>
+<body>
+    
+    <div class="formulaire">
+        <a class="navbar-brand" href="" style="text-decoration: none; color: blue; position: absolute; top: 15%;">BRIEF'ME SARL</a>
+   
+          <form method="POST" action="/data" >
+             <div class="row">
+          <div class="col">
+            <input type="text"  placeholder="Client name" name="nom">
+          </div>
+          <input type="text" name="adress" id="" placeholder="adress client ">
+          <div>
+              <input type="number" name="ice" id="">
+          </div>
+          <input type="text" name="desi" placeholder="désignation">
+          <div> <input type="text" placeholder="quantité" name="qte"></div>
+          <div><input type="text" name="puht" id="" placeholder="prix unités"></div>
+          <input type="date" name="dtf" id="">
+          <button type="submit">ADD </button>
+          </form>
+
+      </form></div></div>
+</body>
+</html>
